@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - atgeller
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - atgeller/wasm-redex
+  - atgeller/wasmtime
+  - atgeller/wasm-tools

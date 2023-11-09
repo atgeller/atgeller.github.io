@@ -28,7 +28,7 @@
             <h6 class="title font-weight-bold ml-1 ml-md-4">{{content.title}}</h6>
             {% endif %}
             {% if content.department or content.institution %}
-            <table class="table-cv ml-1 ml-md-4 institution">
+            <table class="table-cv ml-1 ml-md-4 mb-1 institution">
             <tbody>
               {% if content.institution %}
               <tr>
@@ -45,11 +45,24 @@
             </tbody>
             </table>
             {% endif %}
+            {% if content.gpa %}
+            <div class="ml-1 ml-md-4 mb-1">GPA: {{content.gpa}}</div>
+            {% endif %}
+            {% if content.supervisors %}
+              <div class="ml-1 ml-md-4 mb-1">
+                Supervisors: {{ content.supervisors }}
+              </div>
+            {% endif %}
+            {% if content.supervisor %}
+              <div class="ml-1 ml-md-4 mb-1">
+                Supervisor: {{ content.supervisor }}
+              </div>
+            {% endif %}
             {% if content.maindescription %}
               <div class="ml-1 ml-md-4 ">{{ content.maindescription }}</div>
             {% endif %}
             {% if content.description %}
-              <ul class="items">
+              <ul class="items" style="list-style-type: none;">
                 {% for item in content.description %}
                   <li>
                     {% if item.contents %}

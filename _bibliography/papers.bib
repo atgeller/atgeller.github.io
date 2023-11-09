@@ -1,84 +1,32 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{wasm-prechk,
+author = {Geller, Adam T. and Frank, Justin and Bowman, William J.},
+title = {Indexed Types for a Statically Safe WebAssembly},
+year = {2024},
+selected = {true},
+journal = {To appear at POPL 2024. More details to come. Principles of Programming Lanuages (POPL)},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{flux,
+author = {Lehmann, Nico and Geller, Adam T. and Vazou, Niki and Jhala, Ranjit},
+title = {Flux: Liquid Types for Rust},
+year = {2023},
+url = {https://doi.org/10.1145/3591283},
+doi = {10.1145/3591283},
+abstract = {We introduce Flux, which shows how logical refinements can work hand in glove with Rust's ownership mechanisms to yield ergonomic type-based verification of low-level pointer manipulating programs. First, we design a novel refined type system for Rust that indexes mutable locations, with pure (immutable) values that can appear in refinements, and then exploits Rust's ownership mechanisms to abstract sub-structural reasoning about locations within Rust's polymorphic type constructors, while supporting strong updates. We formalize the crucial dependency upon Rust's strong aliasing guarantees by exploiting the Stacked Borrows aliasing model to prove that "well-borrowed evaluations of well-typed programs do not get stuck". Second, we implement our type system in Flux, a plug-in to the Rust compiler that exploits the factoring of complex invariants into types and refinements to efficiently synthesize loop annotations-including complex quantified invariants describing the contents of containers-via liquid inference. Third, we evaluate Flux with a benchmark suite of vector manipulating programs and parts of a previously verified secure sandboxing library to demonstrate the advantages of refinement types over program logics as implemented in the state-of-the-art Prusti verifier. While Prusti's more expressive program logic can, in general, verify deep functional correctness specifications, for the lightweight but ubiquitous and important verification use-cases covered by our benchmarks, liquid typing makes verification ergonomic by slashing specification lines by a factor of two, verification time by an order of magnitude, and annotation overhead from up to 24\% of code size (average 14\%), to nothing at all.},
+journal = {Programming Languages Design and Implementation (PLDI)},
+pdf = {pldi2023.pdf},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{vizassert,
+author = {Panchekha, Pavel and Geller, Adam T. and Ernst, Michael D. and Tatlock, Zachary and Kamil, Shoaib},
+title = {Verifying That Web Pages Have Accessible Layout},
+year = {2018},
+url = {https://doi.org/10.1145/3296979.3192407},
+doi = {10.1145/3296979.3192407},
+abstract = {Usability and accessibility guidelines aim to make graphical user interfaces accessible to all users, by, say, requiring that text is sufficiently large, interactive controls are visible, and heading size corresponds to importance. These guidelines must hold on the infinitely many possible renderings of a web page generated by differing screen sizes, fonts, and other user preferences. Today, these guidelines are tested by manual inspection of a few renderings, because 1) the guidelines are not expressed in a formal language, 2) the semantics of browser rendering are not well understood, and 3) no tools exist to check all possible renderings of a web page. VizAssert solves these problems. First, it introduces visual logic to precisely specify accessibility properties. Second, it formalizes a large fragment of the browser rendering algorithm using novel finitization reductions. Third, it provides a sound, automated tool for verifying assertions in visual logic. We encoded 14 assertions drawn from best-practice accessibility and mobile-usability guidelines in visual logic. VizAssert checked them on on 62 professionally designed web pages. It found 64 distinct errors in the web pages, while reporting only 13 false positive warnings.},
+journal = {Programming Languages Design and Implementation (PLDI)},
+pdf = {pldi2018.pdf},
 }
