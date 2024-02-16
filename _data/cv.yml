@@ -33,6 +33,10 @@
 - title: Research Experience
   type: time_table
   contents:
+    - title: Graduate Research Assistant
+      institution: IMDEA Software Institute, Madrid, Spain
+      year: 2018 - Ongoing
+      description: Worked on various project, mainly wasm-prechk (see POPL paper for more)
     - title: Research Intern
       institution: IMDEA Software Institute, Madrid, Spain
       year: Jan 2022 - May 2022

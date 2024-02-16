@@ -22,7 +22,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I am a PhD Student in the Software Practices Lab at UBC, supervised by William J. Bowman.
-My research focuses on doing compiler optimizations safely.
+My research focuses on using type information for doing compiler optimizations safely in low-level languages.
 My interests include the theory and practice of types and compilers, especially problems related to practical type preservation.
 I also have experience working on program verification projects, which is something I enjoy.
 
