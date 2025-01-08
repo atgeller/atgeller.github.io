@@ -26,7 +26,7 @@ My research focuses on using type information for doing compiler optimizations s
 My interests include the theory and practice of types and compilers, especially problems related to practical type preservation.
 I also have experience working on program verification projects, which is something I enjoy.
 
-Outside of grad school, I referee fencing on the US and Canadian national circuits (I also fence, but not nationally).
+Outside of grad school, I referee fencing on the US and Canadian national circuits (I also fence a lot).
 I have a cat, Socrates.
 I enjoy cooking and baking, when I have time/energy.
 My time is often wasted watching various sports, TV shows, and movies.
