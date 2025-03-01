@@ -5,7 +5,14 @@
       value: Adam T. Geller
     - name: Locations
       value: Vancouver, Canada; Seattle, United States;
-    - name: 
+
+- title: Work Experience
+  type: time_table
+  contents:
+    - title: Quantum Software Engineering Intern
+      institution: NVIDIA Development Inc.
+      year: Jun 2024 - Aug 2024
+      description: I had a summer internship at NVIDIA in 2024, where I worked on compiler optimizations for quantum programs as part of the CUDA-Q project.
 
 - title: Education
   type: time_table
@@ -34,13 +41,13 @@
   type: time_table
   contents:
     - title: Graduate Research Assistant
-      institution: IMDEA Software Institute, Madrid, Spain
+      institution: University of British Columbia
       year: 2018 - Ongoing
-      description: Worked on various project, mainly wasm-prechk (see POPL paper for more)
+      description: My thesis is looking at using indexed types to validate practical low-level optimizations
     - title: Research Intern
       institution: IMDEA Software Institute, Madrid, Spain
       year: Jan 2022 - May 2022
-      description: Worked with Niki Vazou on Flux
+      description: Worked with Niki Vazou on Flux (see Flux paper for more info)
     - title: Research Fellowship
       institution: Max Planck Institute for Software Systems, Kaiserslautern, Germany
       year: May 2019 - Aug 2019
@@ -48,7 +55,7 @@
     - title: Undergraduate Research
       institution: University of Washington, Seattle, United States
       year: 2017-2018
-      description: Worked on the Cassius project (led to VizAssert paper).
+      description: Worked on the Cassius project (see VizAssert paper for more info).
     
 
 - title: Teaching Experience
@@ -66,12 +73,11 @@
   type: nested_list
   contents:
     - title: Compilers
-      items: 
+      items:
         - Type Preserving Compilation
-        - Using Verification and Type Information in Compilers
         - Compiler Optimizations
     - title: Type Systems
       items:
         - Typed Intermediate Representations
-        - Refinement Types
+        - Indexed Types
 
