@@ -10,13 +10,13 @@
   type: time_table
   contents:
   - title: Quantum Software Engineering Intern
-      institution: NVIDIA Development Inc.
-      year: May 2025 - Aug 2025
-      description: I had a summer internship at NVIDIA in 2025, where I worked on compiler optimizations for quantum programs as part of the CUDA-Q project.
-    - title: Quantum Software Engineering Intern
-      institution: NVIDIA Development Inc.
-      year: Jun 2024 - Aug 2024
-      description: I had a summer internship at NVIDIA in 2024, where I worked on compiler optimizations for quantum programs as part of the CUDA-Q project.
+    institution: NVIDIA Development Inc.
+    year: May 2025 - Aug 2025
+    description: I had a return summer internship at NVIDIA in 2025, where I worked on compiler optimizations for quantum programs as part of the CUDA-Q project.
+  - title: Quantum Software Engineering Intern
+    institution: NVIDIA Development Inc.
+    year: Jun 2024 - Aug 2024
+    description: I had a summer internship at NVIDIA in 2024, where I worked on compiler optimizations for quantum programs as part of the CUDA-Q project.
 
 - title: Education
   type: time_table

@@ -11,6 +11,7 @@ profile:
   image: me.jpeg
   image_circular: false # crops the image to make it circular
   address: >
+    <p>Software Engineer @ NVIDIA Starting 2026</p>
     <p>Ph.D. @ UBC Ongoing</p>
     <p>M.Sc. @ UBC 2020</p>
     <p>B.Sc. @ UW  2018</p>
@@ -31,3 +32,4 @@ I have a cat, Socrates.
 I enjoy cooking and baking, when I have time/energy.
 My time is often wasted watching various sports, TV shows, and movies.
 
+In January 2026, I will be joining the [CUDA-Q](https://developer.nvidia.com/cuda-q) team at NVIDIA full-time as a software engineer working on quantum compilation.
